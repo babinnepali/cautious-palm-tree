@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Happy Toggle</title>
+    </head>
+    <style>
+        body{
+        background-color: #5dd371;
+        /* background-image: url('vai.jpg'); */
+        /* background-color: hotpink; */
+        }
+        .to-center-btn{
+            
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 300px auto;
+            
+        }
+        button{
+            border-radius: 15px;
+            border-style: none;
+            padding: 20px 30px;
+            color: #9c1e9c;
+            font-weight: bold;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 2;
+        }
+        /* .home__banner-bgVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        z-index: 1;
+        } */
+    </style>
+    <body>
+        <!-- <video src="river.mp4" class="home__banner-bgVideo" autoplay playsinline loop></video> -->
+        <div class="to-center-btn">
+            <button id="btn-one"> Tree </button>
+            <button id="btn-two"> Nature</button>
+        </div>
+        <script>
+            let a = Number(prompt("Enter the number"));
+            let b = Number(prompt("Enter the sec number"));
+             sum = a + b;
+                 alert(sum);
+
+            
+            console.log("Hello Images!");
+            const b1 = document.querySelector('#btn-one');
+            const b2 = document.querySelector('#btn-two');
+            // console.log(b1);
+            b1.addEventListener('click', event =>{
+                // "#F9629F"
+                document.body.style.backgroundImage = "url('tree.png')";
+                // document.body.style.backgroundColor = "#f9629f";
+                b1.style.cursor = "pointer";
+            })
+
+            b2.addEventListener('click', event =>{
+                // "#7CB9E8"
+                document.body.style.backgroundImage ="url('nature.jpg')";
+                // document.body.style.backgroundColor = "#7cb9e8";
+                b2.style.cursor = "pointer";
+            })
+        </script>
+    </body>
+</html>
